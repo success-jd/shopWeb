@@ -1,0 +1,508 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: aliceblue;
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    color: #ffffff;
+    font-size: 25px;
+    height: auto;
+}
+li>a{
+    text-decoration: none;
+    color: white;
+}
+.pop{
+    background-color: orange;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+   
+}
+.hidden{
+    visibility: hidden;
+}
+nav>ul{
+    list-style-type: none;
+    display: flex;
+
+
+}
+nav>ul>li{
+    padding: 10px;
+}
+
+.nav-right{
+    margin-left: auto;
+    color:#0000ff;
+}
+
+.nav-left{
+    margin-right: auto;
+    font-weight: 1000;
+}
+.search{
+    font-size: 25px;
+    height: 40px;
+    width: 79.45%;
+}
+.searchbar{
+    width: 100%;
+}
+.button{
+    width: 20%;
+    float: right;
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 6.8px;
+    text-transform: uppercase;
+  
+}
+header.index{
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 1.5rem;
+}
+.header{
+    margin-top: 9%;
+    margin-bottom: 1%;
+    display: flex;
+
+
+}
+.header>h2{
+    margin: 30px;
+}
+header.computing{
+    margin-top: 9%;
+    margin-bottom: 1%;
+    margin-right: auto; 
+    margin-left: auto;
+    width: 80%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.lbox{
+    height: 100vh;
+
+}
+
+.login-box{
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    margin: 100px 100px;
+}
+
+
+
+.signin{
+    margin-left: 30px;
+    font-size: 25px;
+    border: 5px solid orange;
+    padding: 0% 10% 10% 10%;
+
+     
+}
+.lost-password{
+    text-decoration: underline;
+    color: #f68b1e;
+    float: right;
+    font-size: 0.6em;
+    
+}
+/* Creating the custom check box */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #f68b1e;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.register-section{
+    width: 50%;
+    margin: 30px;
+    margin-top: 10%;
+}
+
+.register-section>h2{
+    margin-top: 10%;
+    text-align: left;
+    font-size: 2em;
+}
+.register-section>hr{
+    margin-bottom: 5%;
+
+}
+.register-section>.label{
+    width: 100%;
+}
+
+.register-aside{
+    background-color: aliceblue;
+    width: 40%;
+    float: right;
+    margin-top: 30%;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+
+}
+.register-aside>h2>a{
+    color: black;
+    text-decoration: none;
+}
+p.register:hover{
+    
+    background-color: #3a1212;
+    color: white;
+}
+
+
+
+.label>label{
+    width: 20%;
+    font-size: 2.4em;
+}
+
+.input{
+    
+    border-radius: 2px;
+    font-size: 29px;
+    float: right;
+    width: 50%;
+
+
+}
+
+.input>span{
+    font-size:29px;
+    border: 2px solid grey; 
+}
+
+.input>input{
+    width: 65%;
+}
+  
+
+input#username,input#password,.signin>button{
+    margin-bottom: 2%;
+    margin-top: 5%;
+    border-radius: 2px;
+    font-size: 40px;
+    line-height: 1.42857;
+    width: 70%;
+    height: auto;
+
+}
+.signin>button{
+    margin-top: 5%;
+    border-radius: 2px;
+    padding-top: 10px;
+    font-size: 24px;
+    line-height: 1.42857;
+    width: 100%;
+    height: auto;
+    background-color:#f68b1e;
+    border: 1px solid #f68b1e;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 1s;
+
+}
+.color{
+    margin-top: 5%;
+    border-radius: 2px;
+    padding-top: 10px;
+    font-size: 24px;
+    line-height: 1.42857;
+    height: auto;
+    background-color: #f68b1e;
+    border: 1px solid #f68b1e;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 1s;
+} 
+
+.color:hover{
+     background-color: #3a1212;
+    color: white;
+
+}
+
+p.register{
+    margin-top: 5%;
+    border-radius: 2px;
+    padding-top: 10px;
+    font-size: 24px;
+    line-height: 1.42857;
+    width: 100%;
+    height: auto;
+    background-color:#f68b1e;
+    border: 1px solid #f68b1e;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+.signin>a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.signin>button:hover{
+    background-color: #3a1212;
+    color: white;
+}
+
+label{
+    font-size: 2em;
+}
+
+
+
+.row-1{
+    display: flex;
+    justify-content: flex-start;
+    background-color: aqua;
+    height: 60vh;
+    align-items: center;
+
+}
+.row-2{
+    height: 50vh;
+    background-color: purple;
+    display: flex;
+
+}
+.row-2>.col-1{
+    background-color: orchid;
+    width: 50%;
+    display: flex;
+
+}
+.row-2>.col-2{
+    background-color: darkgrey;
+    width: 50%;
+    display: flex;
+}
+.col-1{
+    width: 50%;
+}
+.cover{ 
+    width: 50vw;
+    margin: 15%;
+    font-size: 1.5em
+}
+.scover{
+    width: 35%;
+    margin: 15%;
+    align-self: center;
+    text-transform: uppercase;
+}
+.scover>p{
+    text-decoration: underline;
+    color:lightgray;
+    margin-top: 15px;
+    font-size: 0.8em;
+}
+.cover>h2{
+    text-transform: uppercase;
+}
+.cover>h2>span{
+    color: gray;
+}
+.shopbutton{
+    margin-top: 10px;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    color: black;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 0.75em;
+    width: 19%;
+
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    grid-gap: 25px;
+    padding: 10px;
+    margin: 20px;
+}
+.box{
+    background-color:lightgray;
+    padding: 20px;  
+}
+
+.box>img{
+    width: 100%;
+    height: 30vh;
+}
+
+/* .card:hover{
+    transform: scale(1.1);
+}  */
+.down-card{
+   font-size: 1.8em;     
+}
+.dc-button{
+    background-color: orange;
+    text-transform: uppercase;
+    margin-top:10px;
+    width: 50%;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;;
+    font-size: 20px;
+    border: none;
+    margin-left: auto;
+    transition: all 1s;
+}
+.dc-button:hover{
+    background-color: black;
+    color: white;
+}
+.zone {
+    /* cursor:pointer; */
+    color:rgb(20, 19, 19);
+    font-size:1em;
+    border:1px hidden #bbb;
+    transition: all 0.3s linear;
+}
+section>h2{
+    text-align: center;
+    margin: 25px;
+}
+section>h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+section>p{
+    width: 40%;
+    font-size: 1.8em;
+    text-align: center;
+    padding-bottom: 15px;
+    margin: 0 auto;
+}
+
+
+.newsletter>p{
+    text-align: center;
+    padding: 10px;
+}
+.newsletter{
+    width: 60%;
+    margin: 10px auto;
+}
+.newsletter>h2{
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.email{
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;    
+
+}
+.arrow{
+    padding-top: 17px; 
+    padding-bottom: 12.3px;  
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: white;
+    border: 1px solid lightgray;
+    
+}
+.footer>p{
+    text-align: center;
+    background-color:  rgb(246, 139, 30);
+    height: 30px;
+    font-size: 1.6em;
+    padding: 10px;
+}
+.login-footer{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+}
+
+@media only screen and (max-width:900px){
+    nav{
+    font-size: 0.9em;
+    }
+    header{
+        font-size:1.2em;
+    }
+}

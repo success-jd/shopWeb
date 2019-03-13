@@ -1,0 +1,117 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header{
+    display: flex;
+    margin-left: 50px;
+}
+.header-1{
+    border-right: 2px solid black;
+    margin-right: 30px;
+    padding-right: 10px;    
+}
+.header-1>a{
+    text-decoration: none;
+    color: #f68b1e;
+    transition: all 1s;
+}
+.header-1>a:hover{
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+.box-container{
+    margin-top:60px; 
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    background-color:aliceblue;
+    margin: 25px  60px;
+    width: 80%;
+    padding-right: 10px;
+    font-size: 1.8em;
+
+}
+.box>img{
+    width: 10%;
+    height: 90%;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 15px 10px;
+    align-self: center;
+}
+.box>p{
+    display: flex;
+    align-items: center;
+
+}
+.button{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: -20px;
+    
+    
+}
+.button>span{
+    /* border: 1px solid black;
+    border-radius: 50%;
+    background-color: gray;
+    padding: 5px;
+    height: 15px; */
+    cursor: pointer;
+    /* margin: 3px;
+    height: 25%; */
+    font-weight: bold;
+}
+.minus{
+    padding-left: 3px;
+}
+/* .button>span:hover{
+    background-color: #ffffff;
+} */
+.rows{
+    display:flex;
+    transition: all 1s;
+    
+}
+/* .rows:hover{
+    background-color:#f68b1e;
+} */
+.bar{
+    align-self: center;
+    cursor: pointer;
+}
+.bar>div{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin:6px 0;
+}
+.div1{
+    transform: rotate(-45deg)
+    translate(-2px,6px)
+   
+    
+}
+.div2{
+    transform: rotate(45deg)
+    translate(-1px,-6px);
+    
+
+}
+button{
+    text-transform: capitalize;
+    margin: 25px  60px;
+    width: 80%;
+    height: 8vh;
+    font-weight: bold;
+    font-size: 1.4em;
+    background-color: #f68b1e;
+    border: 1px solid #f68b1e;
+    cursor: pointer;
+}
+button:hover{
+    background-color:orange;
+}
