@@ -115,3 +115,7 @@ button{
 button:hover{
     background-color:orange;
 }
+
+.box p.actual-price{
+    display: none;
+}

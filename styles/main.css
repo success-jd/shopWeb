@@ -395,7 +395,7 @@ label{
     grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
     grid-gap: 25px;
     padding: 10px;
-    margin: 20px;
+    margin: 20px 90px   ;
 }
 .box{
     background-color:lightgray;
